@@ -2,9 +2,10 @@
 <#import "parts/login.ftlh" as l>
 
 <@c.page>
-
+<div>
     <@l.logout/>
-
+    <span><a href="/user">User list</a> </span>
+</div>
     <div>
         <form method="post">
             <input type="text" name="text" placeholder="Введите сообщение">
@@ -17,7 +18,7 @@
 
     <div>Список сообщений</div>
         <form method="get" action="/main">
-            <input type="text" name="filter" value="${filter}" placeholder="Фильтр">
+            <input type="text" name="filter" value="${filter}">
             <button type="submit">Найти</button>
         </form>
 
