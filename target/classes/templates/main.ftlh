@@ -11,7 +11,7 @@
             <input type="text" name="text" placeholder="Введите сообщение">
             <input type="text" name="tag" placeholder="ТЭГ">
             <input type="file" name="file">
-            <input type="hidden" name="_csrf" value="{{_csrf.token}}">
+            <input type="hidden" name="_csrf" value="${_csrf.token}">
             <button type="submit">Добавить</button>
         </form>
     </div>
