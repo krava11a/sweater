@@ -16,7 +16,7 @@
                 <input type="email" name="email" class="form-control" placeholder="some@some.com" value="${email!''}"/>
             </div>
         </div>
-        <input type="hidden" name="_csrf" value="${_csrf.token}">
+        <input type="hidden" name="_csrf" value="${_csrf.token}" />
         <button type="submit" class="btn btn-primary">Save</button>
     </form>
 </@c.page>
